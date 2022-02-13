@@ -1,0 +1,168 @@
+body {
+  background-image: linear-gradient(to bottom right, rgb(230, 76, 76), rgb(59, 55, 55));
+  
+  background-repeat: no-repeat;
+}
+*{
+ margin: 0;
+  padding: 0;
+}
+.menu .logo a {
+  text-decoration: none;
+  font-size: 50px;
+  color: rgb(231, 23, 23);
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: bolder;
+  position: relative;
+  text-shadow: 3px 3px 5px rgb(192, 95, 95);
+}
+
+.menu .logo {
+  background-color: black;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+
+.menu .navbar a {
+  text-decoration: none;
+  font-size: 25px;
+  font-weight: bolder;
+  color: whitesmoke;
+  padding: 8px 16px;
+  display: block;
+  
+}
+.menu .navbar li a i{
+  padding: 0 5px;
+}
+
+.menu .navbar {
+  
+ display: flex;
+ background-color: rgb(49, 47, 47);
+ 
+  
+}
+
+.menu .navbar li {
+  list-style: none;
+  
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+
+
+.menu .navbar a:hover {
+  color: rgb(231, 23, 23);
+}
+.slider{
+  overflow: hidden;
+}
+.slider figure{
+  position: relative;
+  width: 500%;
+  margin: 0;
+  left: 0;
+  animation: 20s slider infinite;
+}
+.slider figure img{
+  width: 20%;
+  float: left;
+  
+}
+
+@keyframes slider{
+  0%{left: 0;}
+  20%{left: 0;}
+  25%{left: -100%;}
+  45%{left: -100%;}
+  50%{left: -200%;}
+  70%{left: -200%;}
+  75%{left: -300%;}
+  95%{left: -300%;}
+  100%{left: -400%;}
+}
+.container .poster{
+  margin: 5px;
+  
+  display: flex;
+  width: 90%;
+  padding: 3px 10px;
+  height: 150px;
+  cursor: pointer;
+ 
+}
+.container .poster img{
+  width: 20%;
+  height: 75%;
+  padding: 24px;
+  float: left;
+}
+.container .poster img:hover{
+  filter: blur(2px);
+}
+.container .poster .description{
+  display: flex;
+}
+.container .poster .description p{
+  font-size: 25px;
+  font-weight: bold;
+  padding-top: 35px;
+  cursor: pointer;
+  
+}
+.container .poster i{
+  position: absolute;
+  right: 20%;
+  padding-top: 30px;
+  
+}
+.container .poster .description small{
+  font-size:large;
+  color: rgb(62, 60, 63);
+}
+
+/* .container{
+  padding-left: 12%;
+  padding-top: 5%;
+} */
+.screen .container{
+
+  background-color: black;
+  border-radius: 10px;
+  width: 70%;
+  margin:  auto;
+  background: rgb(2,0,36);
+  background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(214,118,74,1) 12%, rgba(35,109,172,1) 98%);
+}
+.buttom{
+  position: sticky;
+  height: 130px;
+  bottom: 0;
+  background-color: black; 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  flex-direction: column;
+}
+#myprogressbar{
+  width: 80vw;
+  cursor: pointer;
+}
+.icons{
+  margin-top: 14px;
+}
+.icons i{
+  cursor: pointer;
+}
+.screen{
+  min-height: 80vh;
+}
+.songinfo{
+  position: absolute;
+  left: 10vw;
+}
